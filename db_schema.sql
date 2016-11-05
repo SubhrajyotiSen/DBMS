@@ -12,7 +12,7 @@ create table if not exists article (
 	content text not null,
 	author text not null,
 	category_id integer not null,
-	a_date text not null
+	a_date text not null,
 	foreign key(author) references users(username),
 	foreign key(category_id) references category(category_id)
 );
